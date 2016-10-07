@@ -1,8 +1,11 @@
 import webbrowser
 import time
 
-count = 0
-while (count < 5):
-  time.sleep(1)
+total_breaks = 5
+break_count = 0
+
+print("This program stared on " + time.ctime())
+while (break_count < total_breaks):
+  time.sleep(10)
   webbrowser.open("http://www.youtube.com/watch?v=dQw4w9WgXcQ")
-  count = count + 1
+  break_count = break_count + 1
